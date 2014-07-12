@@ -42,15 +42,15 @@ try:
         sock.close()
 
 except KeyboardInterrupt:
-    print "You pressed Ctrl+C"
+    print "premi Ctrl+C"
     sys.exit()
 
 except socket.gaierror:
-    print 'Hostname could not be resolved. Exiting'
+    print 'non e possibile risolvere hostname'
     sys.exit()
 
 except socket.error:
-    print "Couldn't connect to server"
+    print "niente conessione al server"
     sys.exit()
 
 
@@ -60,4 +60,4 @@ t2 = datetime.now()
 total =  t2 - t1
 
 
-print 'Scanning Completed in: ', total
+print 'Scanning completato in: ', total
